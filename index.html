@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de código en Python</title>
+	<link rel="stylesheet" href="prism.css">
+	<script src="prism.js"></script>
+    <style>
+        .fair-style-button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 2px solid white;
+            color: white;
+            background-color: #00bb2d;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            font-size: 18px;
+            transition: transform 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pagina para adjuntar repasos, talleres y retos del ciclo campus</h1>
+    <a href="https://chat.whatsapp.com/HJAIVfuFGIg0UWfTUWtc0g" class="fair-style-button">Link de WhatsApp para grupo de la Tarde: https://chat.whatsapp.com/HJAIVfuFGIg0UWfTUWtc0g</a>
+	<p>Taller</p>
+	<pre>
+		<code class="language-python">
+#Programa 
+#Autor: Andres Santana 
+#Fecha: 01/03/2023
+
+cod=int(input("Codigo: "))
+nombre=input("Nombre: ")
+print("Programa academico al que pertenece:")
+print("1: Técnico en Sistemas")
+print("2: Técnico en Desarrollo de videojuegos")
+print("3: Técnico en Animación Digital")
+x=int(input("Digitar numero (1,2,3): "))
+
+print("Indicador de beca: ")
+print("1: Beca por rendimiento académico")
+print("2: Beca Cultural")
+print("3: Sin Beca")
+y=int(input("Digitar numero (1,2,3): "))
+
+if x==1:
+    z=800000
+elif x==2:
+    z=1000000
+else:
+    z=1200000
+
+if y==1:
+    w=0.5
+elif y==2:
+    w=0.4
+else:
+    w=0
+
+valor=z-w*z
+
+
+print("Nombre: ",nombre)
+print("Valor neto a pagar de matricula: ","{:,.2f}".format(valor))
+
+		</code>
+	</pre>
+</body>
+</html>
